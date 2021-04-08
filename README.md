@@ -1,2 +1,0 @@
-# DarkJam
-Coding Practice
