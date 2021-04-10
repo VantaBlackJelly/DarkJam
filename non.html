@@ -1,0 +1,47 @@
+<html>
+  <style>
+    header{background-color:rgb(20,20,20);
+            font-color:white;
+            margin:justify;
+    }
+    * { padding: 0;
+         margin: 0; 
+    }
+    canvas { background: #eee; 
+              display: block;
+               margin: 0 auto; 
+    }
+  </style>
+  <script type="text/javascript">
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    /*Rectangle*/
+    ctx.beginPath();
+    ctx.rect(20, 40, 50, 50);
+    ctx.fillStyle = "#FF0000";
+    ctx.fill();
+    ctx.closePath();
+    /*Green Ball*/
+    ctx.beginPath();
+    ctx.arc(240, 160, 20, 0, Math.PI*2, false);
+    ctx.fillStyle = "green";
+    ctx.fill();
+    ctx.closePath();
+    /*Rectangle Blue*/
+    ctx.beginPath();
+    ctx.rect(160, 10, 100, 40);
+    ctx.strokeStyle = "rgba(0, 0, 255, 0.5)";
+    ctx.stroke();
+    ctx.closePath();
+  </script>
+  <header> Dark Jam Coding Practice </header>
+  <body><h1>Goals For This Page</h1>
+      <ul>
+        <li>Produce multi-sectionial web pages with basic article structure</li>
+        <li>Make a dedicated CSS stylesheet that makes the webpage more appealing</li>
+        <li>Code an interactive script sheet to allow for interactive features and a working blogging system</li>
+      </ul>
+  <canvas id="myCanvas" width="480" height="320"></canvas>
+  </body>
+  <footer></footer>
+</html>
